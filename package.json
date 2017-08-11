@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1"
+  }
+}
