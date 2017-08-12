@@ -4,6 +4,25 @@
   },
   "devDependencies": {
     "browserify": "^14.4.0",
-    "gulp": "^3.9.1"
-  }
+    "cross-env": "^5.0.5",
+    "gulp": "^3.9.1",
+    "nodemon": "^1.11.0"
+  },
+  "name": "absolutezeroangular",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JiniHendrix/absolutezeroangular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JiniHendrix/absolutezeroangular/issues"
+  },
+  "homepage": "https://github.com/JiniHendrix/absolutezeroangular#readme"
 }
