@@ -8,11 +8,12 @@ const port = process.env.PORT;
 app.use(express.static(path.resolve(__dirname, '../public')));
 
 app.get('/angular', (req, res) => {
-  fs.readFile(path.resolve(__dirname, '../node_modules/angular/angular.js'), 'utf8', angular => {
-    console.log(__dirname)
+  fs.readFile(path.resolve(__dirname, '../node_modules/angular/angular.js'), 'utf8', (err, angular) => {
     res.set('Content-Type', 'application/javascript').send(angular);
   });
 });
+
+
 
 app.listen(port, () => {
   console.log(`Server is listening on mfing ${port}`);

@@ -1,0 +1,57 @@
+.main-logo {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.navbar {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 100px;
+}
+
+.navbar__ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin: auto;
+}
+
+.navbar__li {
+  display: inline-block;
+  line-height: 100px;
+  font-size: 40px;
+  height: 100px;
+  padding: 0 50px 0;
+  cursor: pointer;
+}
+
+.navbar__li:hover {
+  background-color: blue;
+}
+
+.main__product-img-wrapper {
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+}
+
+.main__product-img {
+  height: 600px;
+  width: 400px;
+  margin: 0 25px 0;
+}
+
+#MAIN__PRODUCT-IMG-LEFT {
+  float: left;
+}
+
+#MAIN__PRODUCT-IMG-RIGHT {
+  float: right;
+}
