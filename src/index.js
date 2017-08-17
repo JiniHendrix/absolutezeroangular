@@ -1,6 +1,6 @@
 const app = angular.module('App', ['ngRoute']);
 
-app.config(function($routeProvider) {console.log('HELLO')
+app.config(function($routeProvider) {
   $routeProvider
     .when('/', {
       templateUrl: "../public/home.html"
@@ -14,10 +14,15 @@ app.config(function($routeProvider) {console.log('HELLO')
     .when('/contact', {
       templateUrl: "../public/contact.html"
     })
+    .when('/shop/neon-grizzly', {
+      templateUrl: ".../public/neon-grizzly.html"
+    })
+    .when('/shop/cold-polar', {
+      templateUrl: ".../public/cold-polar.html"
+    })
 })
 
 app.controller('HomeController', ($scope) => {
-console.log('HELLO')
 })
 
 app.controller('Shop', ($scope) => {
