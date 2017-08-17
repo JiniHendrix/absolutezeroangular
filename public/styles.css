@@ -1,6 +1,12 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+}
+
+.lato__reg {
+  font-weight: 400;
 }
 
 .main-logo {
@@ -67,4 +73,19 @@ body {
 
 #MAIN__PRODUCT-IMG-RIGHT {
   float: right;
+}
+
+.about__container {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about__header {
+  text-align: left;
+}
+
+.about__paragraph {
+  text-align: left;
 }
