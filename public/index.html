@@ -15,11 +15,13 @@
 <body>
   <img src="#" class="main-logo"></img>
   <nav class="navbar" ng-controller="HomeController">
-    <ul class="navbar__ul">
+    <ul class="navbar__ul navbar__left">
       <li class="navbar__li"><a href="#!">Home</a></li>
        <li class="navbar__li">Shop</li> 
+    </ul>
        <!--Shop should trigger a drop down menu with Neon Grizzly and Cold Polar as options, that are links to each's page  -->
-      <li class="navbar__li"><a href="#!about">About Us</a></li>
+    <ul class="navbar__ul navbar__right">
+       <li class="navbar__li"><a href="#!about">About</a></li>
       <li class="navbar__li"><a href="#!contact">Contact</a></li>
     </ul>
   </nav>
