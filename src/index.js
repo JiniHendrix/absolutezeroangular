@@ -22,6 +22,10 @@ app.config(function($routeProvider) {
     })
 })
 
+app.controller('NavController', $scope => {
+  //add on hover function for Shop that displays a drop down menu
+})
+
 app.controller('HomeController', ($scope) => {
 })
 
@@ -35,4 +39,15 @@ app.controller('About', ($scope) => {
 
 app.controller('Contact', ($scope) => {
 
+})
+
+app.controller('ProductController', $scope => {
+  //probably going to load stuff from database, but that's later later
+  //probably going to make it more static than i think, because I want to match the images with the details
+  $scope.neonGrizzly = {
+    images: [],
+    summary: '',
+    details: [],
+    
+  }
 })

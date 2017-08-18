@@ -89,6 +89,11 @@ body {
   height: 600px;
   width: 400px;
   margin: 0 25px 0;
+  transition: border .5s;
+}
+
+.main__product-img:hover {
+  border: 2px solid #1e90ff;
 }
 
 #MAIN__PRODUCT-IMG-LEFT {
@@ -142,11 +147,6 @@ body {
   display: inline-block;
   margin-bottom: 20px;
 }
-
-/* .product__detail:nth-child(odd) {
-  color: #fffff0;
-  background-color: #1e90ff;
-} */
 
 .product__detail-img {
   height: 300px;
