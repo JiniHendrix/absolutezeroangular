@@ -47,7 +47,19 @@ app.controller('ProductController', $scope => {
   $scope.neonGrizzly = {
     images: [],
     summary: '',
-    details: [],
-    
+    details: [
+      {
+        header: 'hi',
+        text: 'whats up dude'
+      },
+      {
+        header: 'hi',
+        text: 'whats up dude'
+      },
+      {
+        header: 'hi',
+        text: 'whats up dude'
+      },
+    ],
   }
 })
