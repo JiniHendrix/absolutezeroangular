@@ -6,7 +6,7 @@ const contactController = require('./contact/contactController.js');
 const routes = require('./routes/routes.js');
 
 const app = angular.module('App', ['ngRoute']);
-
+console.log('WHATTUP')
 routes(app);
 navController(app);
 homeController(app);

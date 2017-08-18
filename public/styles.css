@@ -165,11 +165,3 @@ body {
 .product__detail-text:nth-child(even) {
   float: left;
 }
-
-.even {
-  color: red;
-}
-
-.odd {
-  color: blue;
-}
