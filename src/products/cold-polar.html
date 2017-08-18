@@ -1,0 +1,9 @@
+<div ng-controller="ProductController">
+  <h1>HELLO WORLD</h1>
+  <ul>
+    <li ng-repeat="detail in neonGrizzly.details">
+      <h1 ng-class-odd="'odd'" ng-class-even="'even'">{{detail.header}}</h1>
+      <p>{{detail.text}}</p>
+    </li>
+  </ul>
+</div>

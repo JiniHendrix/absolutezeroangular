@@ -1,24 +1,23 @@
+const navController = require('./nav/navController.js');
+
 const app = angular.module('App', ['ngRoute']);
 
 app.config(function($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: "../public/home.html"
-    })
-    .when('/shop', {
-      templateUrl: "../public/shop.html"
+      templateUrl: "../src/home/home.html"
     })
     .when('/about', {
-      templateUrl: "../public/about.html"
+      templateUrl: "../src/about/about.html"
     })
     .when('/contact', {
-      templateUrl: "../public/contact.html"
+      templateUrl: "../src/contact/contact.html"
     })
     .when('/shop/neon-grizzly', {
-      templateUrl: "../public/neon-grizzly.html"
+      templateUrl: "../src/products/neon-grizzly.html"
     })
     .when('/shop/cold-polar', {
-      templateUrl: "../public/cold-polar.html"
+      templateUrl: "../src/products/cold-polar.html"
     })
 })
 
@@ -62,4 +61,19 @@ app.controller('ProductController', $scope => {
       },
     ],
   }
+
+  $scope.repeatMe = [
+    {
+        header: 'hi',
+        text: 'whats up dude'
+      },
+      {
+        header: 'hi',
+        text: 'whats up dude'
+      },
+      {
+        header: 'hi',
+        text: 'whats up dude'
+      },
+  ]
 })
