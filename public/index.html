@@ -13,22 +13,22 @@
 </head>
 
 <body>
-  <img src="#" class="main-logo"></img>
+  <div class="navbar__wrapper">
   <nav class="navbar" ng-controller="HomeController">
-    <ul class="navbar__ul navbar__left">
+    <ul class="navbar__ul">
       <li class="navbar__li"><a href="#!">Home</a></li>
        <li class="navbar__li">Shop</li> 
-    </ul>
-       <!--Shop should trigger a drop down menu with Neon Grizzly and Cold Polar as options, that are links to each's page  -->
-    <ul class="navbar__ul navbar__right">
+       <img src="#" class="main-logo"></img>
        <li class="navbar__li"><a href="#!about">About</a></li>
       <li class="navbar__li"><a href="#!contact">Contact</a></li>
     </ul>
   </nav>
+  </div>
   <ng-view></ng-view>
   <footer class="main__footer">
 
   </footer>
+  
 </body>
 
 </html>

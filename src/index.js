@@ -15,10 +15,10 @@ app.config(function($routeProvider) {
       templateUrl: "../public/contact.html"
     })
     .when('/shop/neon-grizzly', {
-      templateUrl: ".../public/neon-grizzly.html"
+      templateUrl: "../public/neon-grizzly.html"
     })
     .when('/shop/cold-polar', {
-      templateUrl: ".../public/cold-polar.html"
+      templateUrl: "../public/cold-polar.html"
     })
 })
 
