@@ -7,6 +7,7 @@ module.exports = app => {
     summary: '',
     details: [
       {
+        imageUrl: '',
         header: 'hi',
         text: 'whats up dude'
       },

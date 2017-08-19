@@ -165,3 +165,12 @@ body {
 .product__detail-text:nth-child(even) {
   float: left;
 }
+
+.navbar__li--shop {
+  position: relative;
+}
+
+.shop__dropdown {
+  position: absolute;
+  
+}
