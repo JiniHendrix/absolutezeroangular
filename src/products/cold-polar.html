@@ -1,7 +1,7 @@
 <div class="product__container" ng-controller="ProductController">
   <div class="product__display">
     <div class="images__container">
-    <img src="#" class="product__img">
+    <img src={{coldPolar.imageUrls[0]}} class="product__img">
     <div class="product__img-gallery">
       <img src={{image}} ng-repeat="image in coldPolar.imageUrls" class="product__img-gallery--img">
     </div>

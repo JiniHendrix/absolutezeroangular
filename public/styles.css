@@ -5,7 +5,7 @@ body {
   padding: 0;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
-  background-color: #fffff0;
+  background-color: white;
 }
 
 .lato__reg {
@@ -154,7 +154,7 @@ body {
 .product__detail-img {
   height: 300px;
   width: 300px;
-  background-color: #fffff0;
+  background-color: white;
   border: none;
   float: left;
 }
@@ -184,7 +184,7 @@ body {
   -o-transition: height .2s cubic-bezier(1, .01, 1, 1);
   -moz-transition: height .2s cubic-bezier(1, .01, 1, 1);
   left: 0px;
-  background-color: #fffff0;
+  background-color: white;
 }
 
 .shop__dropdown {
@@ -195,6 +195,11 @@ body {
   padding: 5px;
   z-index: 5;
   box-sizing: border-box;
+}
+
+.shop__dropdown a{
+  display: inline-block;
+  width: 100%;
 }
 
 .shop__dropdown--ul {
