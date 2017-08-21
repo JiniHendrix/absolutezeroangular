@@ -3,7 +3,8 @@
   <ul>
     <li ng-repeat="detail in neonGrizzly.details">
       <h1 ng-class-odd="'odd'" ng-class-even="'even'">{{detail.header}}</h1>
-      <p>{{detail.text}}</p>
+      <p>{{detail}}</p>
+      <p>{{neonGrizzly.imageUrls[$index]}}
     </li>
   </ul>
 </div>

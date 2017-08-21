@@ -1,35 +1,21 @@
-<div class="product__container">
+<div class="product__container" ng-controller="ProductController">
   <div class="product__display">
-    <img src="#" class="product__img" id="Neon Grizzly">
+    <div class="images__container">
+    <img src="#" class="product__img">
+    <div class="product__img-gallery">
+      <img src="image" ng-repeat="image in neonGrizzly.imageUrls" class="product__img-gallery--img">
+    </div>
+    </div>
     <div class="product__summary">
-      <h1 class="product__price">$150</h1>
-      <p class="product__desc">I'll laugh until my head comes off I'll swallow till I burst Until I burst Until I</p>
-      <button>Buy Now On Amazon</button>
+      <h1 class="product__price">${{neonGrizzly.price}}</h1>
+      <p class="product__desc">{{neonGrizzly.summary}}</button>
     </div>
   </div>
   <div class="product__details">
-    <div class="product__detail">
-      <img class="product__detail-img">
-      <p class="product__detail-text">
-        Who's in a bunker? Who's in a bunker? Women and children first And the children first And the children
-      </p>
-    </div>
-    <div class="product__detail">
-      <img class="product__detail-img">
-      <p class="product__detail-text">
-        Who's in a bunker? Who's in a bunker? Women and children first And the children first And the children
-      </p>
-    </div>
-    <div class="product__detail">
-      <img class="product__detail-img">
-      <p class="product__detail-text">
-        Who's in a bunker? Who's in a bunker? Women and children first And the children first And the children
-      </p>
-    </div>
-    <div class="product__detail">
-      <img class="product__detail-img">
-      <p class="product__detail-text">
-        Who's in a bunker? Who's in a bunker? Women and children first And the children first And the children
+    <div class="product__detail" ng-repeat="detail in neonGrizzly.details">
+      <img class="product__detail-img" ng-class-odd="product__img--odd" src={{neonGrizzly.imageUrls[$index]}}>
+      <p class="product__detail-text" ng-class-odd="product__detail--odd">
+        {{detail}}
       </p>
     </div>
   </div>
