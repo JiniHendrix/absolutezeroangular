@@ -169,8 +169,49 @@ body {
 .navbar__li--shop {
   position: relative;
 }
-
+.dropdown__wrapper {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 0;
+  transition: height .2s cubic-bezier(1, .01, 1, 1);
+  left: 0px;
+  background-color: #fffff0;
+}
 .shop__dropdown {
   position: absolute;
-  
+  left: 0px;
+  width: 150px;
+  color: black;
+  padding: 5px;
+  z-index: 5;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.shop__dropdown--ul {
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 18px; 
+  text-align: left;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.shop__dropdown--category {
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+}
+
+.shop__dropdown--product {
+  transition: background-color .5s;
+}
+
+.shop__dropdown--product:hover {
+  background-color: #1e90ff;
+  color: white;
+} 
+
+.add-height {
+  height: 118px;
 }

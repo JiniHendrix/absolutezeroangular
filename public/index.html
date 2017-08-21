@@ -14,23 +14,35 @@
 
 <body>
   <div class="navbar__wrapper">
-  <nav class="navbar" ng-controller="HomeController">
-    <ul class="navbar__ul">
-      <li class="navbar__li"><a href="#!">Home</a></li>
-       <li class="navbar__li navbar__li--shop">Shop</li> 
-       <div class="shop__dropdown">
-       </div>
-       <img src="#" class="main-logo"></img>
-       <li class="navbar__li"><a href="#!about">About</a></li>
-      <li class="navbar__li"><a href="#!contact">Contact</a></li>
-    </ul>
-  </nav>
+    <nav class="navbar" ng-controller="NavController">
+      <ul class="navbar__ul">
+        <li class="navbar__li"><a href="#!">Home</a></li>
+        <li class="navbar__li navbar__li--shop" ng-mouseleave="shopOnMouseLeave()" ng-mouseover="shopOnMouseOver()">
+          Shop
+          <div class="dropdown__wrapper">
+          <div class="shop__dropdown">
+            <ul class="shop__dropdown--ul" ng-repeat="(category, products) in products">
+              <li class="shop__dropdown--category">{{category}}</li>
+              <li class="shop__dropdown--product" ng-repeat="product in products">
+                <a href={{product.href}}>
+               {{product.name}}
+              </a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </li>
+        <img src="#" class="main-logo"></img>
+        <li class="navbar__li"><a href="#!about">About</a></li>
+        <li class="navbar__li"><a href="#!contact">Contact</a></li>
+      </ul>
+    </nav>
   </div>
   <ng-view></ng-view>
   <footer class="main__footer">
 
   </footer>
-  
+
 </body>
 
 </html>
