@@ -1,9 +1,9 @@
 <div class="product__container" ng-controller="ProductController">
   <div class="product__display">
     <div class="images__container">
-    <img src="#" class="product__img">
+    <img src={{neonGrizzly.imageUrls[0]}} class="product__img">
     <div class="product__img-gallery">
-      <img src="image" ng-repeat="image in neonGrizzly.imageUrls" class="product__img-gallery--img">
+      <img src={{image}} ng-repeat="image in neonGrizzly.imageUrls" class="product__img-gallery--img">
     </div>
     </div>
     <div class="product__summary">
@@ -14,8 +14,8 @@
   <div class="product__details">
     <div class="product__detail" ng-repeat="detail in neonGrizzly.details">
       <img class="product__detail-img" ng-class-odd="product__img--odd" src={{neonGrizzly.imageUrls[$index]}}>
-      <p class="product__detail-text" ng-class-odd="product__detail--odd">
-        {{detail}}
+      <p class="product__detail-text">
+        {{detail}} 
       </p>
     </div>
   </div>

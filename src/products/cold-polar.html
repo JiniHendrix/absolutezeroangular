@@ -1,10 +1,22 @@
-<div ng-controller="ProductController">
-  <h1>HELLO WORLD</h1>
-  <ul>
-    <li ng-repeat="detail in neonGrizzly.details">
-      <h1 ng-class-odd="'odd'" ng-class-even="'even'">{{detail.header}}</h1>
-      <p>{{detail}}</p>
-      <p>{{neonGrizzly.imageUrls[$index]}}
-    </li>
-  </ul>
+<div class="product__container" ng-controller="ProductController">
+  <div class="product__display">
+    <div class="images__container">
+    <img src="#" class="product__img">
+    <div class="product__img-gallery">
+      <img src={{image}} ng-repeat="image in coldPolar.imageUrls" class="product__img-gallery--img">
+    </div>
+    </div>
+    <div class="product__summary">
+      <h1 class="product__price">${{coldPolar.price}}</h1>
+      <p class="product__desc">{{coldPolar.summary}}</button>
+    </div>
+  </div>
+  <div class="product__details">
+    <div class="product__detail" ng-repeat="detail in coldPolar.details">
+      <img class="product__detail-img" ng-class-odd="product__img--odd" src={{coldPolar.imageUrls[$index]}}>
+      <p class="product__detail-text">
+        {{detail}} 
+      </p>
+    </div>
+  </div>
 </div>

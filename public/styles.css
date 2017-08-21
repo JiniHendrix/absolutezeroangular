@@ -155,17 +155,18 @@ body {
   height: 300px;
   width: 300px;
   background-color: #fffff0;
+  border: none;
   float: left;
 }
 
 .product__detail-text {
-  /* width: 50%; */
-  width: calc(100%-300px);
-  width: -moz-calc(100%-300px);
-  width: -webkit-calc(100%-300px);
-  width: -o-calc(100%-300px);
+   width: 50%; 
+  width: calc(100% - 300px);
+  width: -moz-calc(100% - 300px);
+  width: -webkit-calc(100% - 300px);
+  width: -o-calc(100% - 300px);
   display: inline-block;
-  border: 1px solid black;
+  box-sizing: border-box;
   padding: 30px;
   font-size: 20px;
 }
