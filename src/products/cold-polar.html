@@ -1,14 +1,16 @@
 <div class="product__container" ng-controller="ProductController">
   <div class="product__display">
-    <div class="images__container">
+    <div class="product__images-container">
     <img src={{coldPolar.imageUrls[0]}} class="product__img">
     <div class="product__thumbs">
       <img src={{image}} ng-mouseover="thumbOnClick($event)" ng-repeat="image in coldPolar.imageUrls" class="product__thumbs--img">
     </div>
     </div>
     <div class="product__summary">
+      <h1 class="product__name" id="cold-name">{{coldPolar.name}}</h1>
       <h1 class="product__price">${{coldPolar.price}}</h1>
-      <p class="product__desc">{{coldPolar.summary}}</button>
+      <p class="product__desc">{{coldPolar.summary}}</p>
+    <a href={{coldPolar.amazonUrl}}><button class="product__buy-btn">Buy Now on Amazon</button></a>
     </div>
   </div>
   <div class="product__details">

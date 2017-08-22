@@ -3,7 +3,7 @@ module.exports = app => {
     //probably going to load stuff from database, but that's later later
     //probably going to make it more static than i think, because I want to match the images with the details
     $scope.neonGrizzly = {
-      name: '',
+      name: 'Neon Grizzly',
       imageUrls: [
         'https://images-na.ssl-images-amazon.com/images/I/71B3WOr5nLL._SX425_.jpg',
         'https://images-na.ssl-images-amazon.com/images/I/71lAj9DS5BL._SX425_.jpg',
@@ -12,7 +12,8 @@ module.exports = app => {
         'https://images-na.ssl-images-amazon.com/images/I/61iiC0t5rSL._SX425_.jpg'
       ],
       price: 18.99,
-      summary: 'HEEEEEERE I"M ALLOOOOOOWED EVERYTHING ALLLL OF THE TIIIIME',
+      summary: 'If you like outdoor activities and adventures, then you must always have water with you. But carrying those heavy, impractical and bulky water bottles isn’t the solution! What you need is a sturdy, leak-proof, weatherproof and waterproof hydration backpack to keep you hydrated at all times, and the Neon Grizzly is the ideal one for you! The extra-large 2L reservoir and food-grade, durable and convenient drawstring will allow you easy and hands-free access to your drink.',
+      amazonUrl: 'https://www.amazon.com/dp/B071XB7ZZN',
       details: [
         {
           header: 'NOW YOU CAN STAY HYDRATED ALL THE TIME!',
@@ -47,7 +48,7 @@ module.exports = app => {
         e.target.classList.add('product__thumbs--hover');
       }
     $scope.coldPolar = {
-      name: '',
+      name: 'Cold Polar',
       imageUrls: [
         'https://images-na.ssl-images-amazon.com/images/I/A1ssKkonMOL._SX425_.jpg',
         'https://images-na.ssl-images-amazon.com/images/I/91iSMgJXFLL._SX425_.jpg',
@@ -58,7 +59,8 @@ module.exports = app => {
         'https://images-na.ssl-images-amazon.com/images/I/A1dwr36-6PL._SX425_.jpg'
       ],
       price: 19.99,
-      summary: 'HEEEEEERE I"M ALLOOOOOOWED EVERYTHING ALLLL OF THE TIIIIME',
+      summary: 'Are you an avid lover of traveling and adventures? Or maybe a devoted fitness fan that likes to prepare their meals in order to have full control over your diet? Whichever the case, our superior quality cooling backpack is just the thing you’re looking for!',
+      amazonUrl: 'https://www.amazon.com/dp/B01N9C9CKO',
       details: [
         {
           header: 'YOUR NEW FAVORITE ACCESSORY IS FINALLY HERE!',

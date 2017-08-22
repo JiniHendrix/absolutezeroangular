@@ -1,15 +1,16 @@
 <div class="product__container" ng-controller="ProductController">
   <div class="product__display">
-    <div class="images__container">
+    <div class="product__images-container">
       <img src={{neonGrizzly.imageUrls[0]}} class="product__img">
       <div class="product__thumbs">
         <img src={{image}} ng-mouseover="thumbOnClick($event)" ng-repeat="image in neonGrizzly.imageUrls" class="product__thumbs--img">
       </div>
     </div>
     <div class="product__summary">
+      <h1 class="product__name" id="neon-name">{{neonGrizzly.name}}</h1>
       <h1 class="product__price">${{neonGrizzly.price}}</h1>
-      <p class="product__desc">{{neonGrizzly.summary}}</button>
-    </div>
+      <p class="product__desc">{{neonGrizzly.summary}}</p>
+    <a href={{neonGrizzly.amazonUrl}}><button class="product__buy-btn">Buy Now on Amazon</button></a>
   </div>
   <div class="product__details">
     <div class="product__detail" ng-repeat="detail in neonGrizzly.details">
