@@ -2,8 +2,8 @@
   <div class="product__display">
     <div class="images__container">
       <img src={{neonGrizzly.imageUrls[0]}} class="product__img">
-      <div class="product__img-gallery">
-        <img src={{image}} ng-repeat="image in neonGrizzly.imageUrls" class="product__img-gallery--img">
+      <div class="product__thumbs">
+        <img src={{image}} ng-mouseover="thumbOnClick($event)" ng-repeat="image in neonGrizzly.imageUrls" class="product__thumbs--img">
       </div>
     </div>
     <div class="product__summary">

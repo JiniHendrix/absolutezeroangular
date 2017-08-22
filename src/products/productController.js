@@ -14,28 +14,37 @@ module.exports = app => {
       summary: 'HEEEEEERE I"M ALLOOOOOOWED EVERYTHING ALLLL OF THE TIIIIME',
       details: [
         {
-        header: 'NOW YOU CAN STAY HYDRATED ALL THE TIME!',
-        body: 'Do you like outdoor adventures but hate carrying bulky water bottles or tumblers? Now you don’t have to! The ultimate Neon Grizzly hydration backpack by Absolute Zero is here to keep you hydrated no matter where you are effortlessly!',
+          header: 'NOW YOU CAN STAY HYDRATED ALL THE TIME!',
+          body: 'Do you like outdoor adventures but hate carrying bulky water bottles or tumblers? Now you don’t have to! The ultimate Neon Grizzly hydration backpack by Absolute Zero is here to keep you hydrated no matter where you are effortlessly!',
         },
-      {
-        header: 'A MUST-HAVE FOR RUNNERS, HIKERS & ALL ADVENTURERS!',
-        body: 'When embarking on a new adventure into the wilderness, you should alwaysmake sure that you’re prepared. That’s why our mighty hydration bladder back bag with its huge 2L capacity is your #1 must-have accessory!',
-      },
-      {
-        header: 'SO COMFORTABLE, YOU’LL FORGET YOU’RE WEARING IT!',
-        body: 'The lightweight design and super-comfy mesh shoulder straps, will offer youthe flexibility needed to run or climb without any hassle. Plus,the breathable mesh back will prevent sweating and help you enjoy your activities frustration-free!',
-      },
-      {
-        header: 'CAN YOU REALLY RISK DEHYDRATION?',
-        body: 'The answer is simple: NO! As a result,you should alwaysstay hydrated and make sure to replenish your bodily fluids. That’s why the Neon Grizzly robust hydration camel backpack with extra pockets is the ideal way to carry your water and snacks!',
-      },
-      {
-        header: 'ABSOLUTE ZERO RISK!',
-        body: 'When it comes to keeping you hydrated and safe, we don’t like to play around. That’s why our Neon Grizzly survival hydration backpack comes with a LIFETIME money back guarantee! If, at any time, you’re not 100% satisfied, we’ll offer you a prompt and full refund!'
-      }
+        {
+          header: 'A MUST-HAVE FOR RUNNERS, HIKERS & ALL ADVENTURERS!',
+          body: 'When embarking on a new adventure into the wilderness, you should always make sure that you’re prepared. That’s why our mighty hydration bladder back bag with its huge 2L capacity is your #1 must-have accessory!',
+        },
+        {
+          header: 'SO COMFORTABLE, YOU’LL FORGET YOU’RE WEARING IT!',
+          body: 'The lightweight design and super-comfy mesh shoulder straps, will offer youthe flexibility needed to run or climb without any hassle. Plus, the breathable mesh back will prevent sweating and help you enjoy your activities frustration-free!',
+        },
+        {
+          header: 'CAN YOU REALLY RISK DEHYDRATION?',
+          body: 'The answer is simple: NO! As a result,you should always stay hydrated and make sure to replenish your bodily fluids. That’s why the Neon Grizzly robust hydration camel backpack with extra pockets is the ideal way to carry your water and snacks!',
+        },
+        {
+          header: 'ABSOLUTE ZERO RISK!',
+          body: 'When it comes to keeping you hydrated and safe, we don’t like to play around. That’s why our Neon Grizzly survival hydration backpack comes with a LIFETIME money back guarantee! If, at any time, you’re not 100% satisfied, we’ll offer you a prompt and full refund!'
+        }
       ],
     }
 
+      $scope.thumbOnClick = function(e) {
+        const mainImg = document.getElementsByClassName('product__img')[0];
+        mainImg.src = e.target.src;
+
+        const hovered = document.getElementsByClassName('product__thumbs--hover')[0];
+        if (hovered) hovered.classList.remove('product__thumbs--hover');
+
+        e.target.classList.add('product__thumbs--hover');
+      }
     $scope.coldPolar = {
       imageUrls: [
         'https://images-na.ssl-images-amazon.com/images/I/A1ssKkonMOL._SX425_.jpg',
