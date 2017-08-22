@@ -22,11 +22,13 @@
           <div class="dropdown__wrapper">
             <div class="shop__dropdown">
               <ul class="shop__dropdown--ul" ng-repeat="(category, products) in products">
-                <li class="shop__dropdown--category">{{category}}</li>
+                <li class="shop__dropdown--category">
+                  {{category}}
+                </li>
                 <li class="shop__dropdown--product" ng-repeat="product in products">
                   <a href={{product.href}}>
-               {{product.name}}
-              </a>
+                    {{product.name}}
+                  </a>
                 </li>
               </ul>
             </div>

@@ -199,11 +199,12 @@ body {
 .shop__dropdown {
   position: absolute;
   left: 0px;
-  width: 150px;
+  width: 120px;
   color: black;
   padding: 5px;
   z-index: 5;
   box-sizing: border-box;
+  box-shadow: 0 0 2px 2px;
 }
 
 .shop__dropdown a{
@@ -227,6 +228,10 @@ body {
 
 .shop__dropdown--product {
   transition: background-color .5s;
+}
+
+.shop__dropdown a {
+  padding: 0;
 }
 
 .shop__dropdown--product:hover {
