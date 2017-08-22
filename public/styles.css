@@ -54,12 +54,17 @@ body {
 
 .navbar__li {
   display: inline-block;
-  line-height: 80px;
   font-size: 25px;
-  height: 80px;
-  padding: 0 30px 0;
+  line-height: 80px;
+}
+
+.navbar__li a {
   cursor: pointer;
   transition: background-color .5s;
+  padding: 0 30px 0;
+  height: 80px;
+  display: inline-block;
+  height: 100%;
 }
 
 .navbar__li a:link, a:visited {
@@ -67,7 +72,7 @@ body {
   color: inherit;
 }
 
-.navbar__li:hover {
+.navbar__li a:hover {
   background-color: #1e90ff;
   color: #fffff0;
 }
@@ -262,10 +267,7 @@ body {
   text-align: center;
   width: 400px;
 }
+
  .product__img--odd {
   float: right;
 }
-
-/* .product__detail--odd {
-  float: left;
-}  */
