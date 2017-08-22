@@ -148,7 +148,6 @@ body {
   display: inline-block;
   width: 100%;
   margin-bottom: 20px;
-  border: 1px solid black;
 }
 
 .product__detail-img {
@@ -157,6 +156,10 @@ body {
   background-color: white;
   border: none;
   float: left;
+}
+
+.product__detail--bold {
+  color: #1e90ff;
 }
 
 .product__detail-text {

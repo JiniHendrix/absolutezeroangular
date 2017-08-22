@@ -15,7 +15,10 @@
     <div class="product__detail" ng-repeat="detail in coldPolar.details">
       <img class="product__detail-img" ng-class-odd="product__img--odd" src={{coldPolar.imageUrls[$index]}}>
       <p class="product__detail-text">
-        {{detail}} 
+        <span class="product__detail--bold">
+          {{detail.header}}
+        </span> <br>
+        {{detail.body}}
       </p>
     </div>
   </div>

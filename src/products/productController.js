@@ -10,14 +10,29 @@ module.exports = app => {
         'https://images-na.ssl-images-amazon.com/images/I/71xB7ZTJ5uL._SX425_.jpg',
         'https://images-na.ssl-images-amazon.com/images/I/61iiC0t5rSL._SX425_.jpg'
       ],
-      price: 150,
+      price: 18.99,
       summary: 'HEEEEEERE I"M ALLOOOOOOWED EVERYTHING ALLLL OF THE TIIIIME',
       details: [
-        'NOW YOU CAN STAY HYDRATED ALL THE TIME!–Do you like outdoor adventures but hate carrying bulky water bottles or tumblers? Now you don’t have to! The ultimate Neon Grizzly hydration backpack by Absolute Zero is here to keep you hydrated no matter where you are effortlessly!',
-        'A MUST-HAVE FOR RUNNERS, HIKERS & ALL ADVENTURERS!–When embarking on a new adventure into the wilderness, you should alwaysmake sure that you’re prepared. That’s why our mighty hydration bladder back bag with its huge 2L capacity is your #1 must-have accessory!',
-        'SO COMFORTABLE, YOU’LL FORGET YOU’RE WEARING IT!–The lightweight design and super-comfy mesh shoulder straps, will offer youthe flexibility needed to run or climb without any hassle. Plus,the breathable mesh back will prevent sweating and help you enjoy your activities frustration-free!',
-        'CAN YOU REALLY RISK DEHYDRATION?–The answer is simple: NO! As a result,you should alwaysstay hydrated and make sure to replenish your bodily fluids. That’s why the Neon Grizzly robust hydration camel backpack with extra pockets is the ideal way to carry your water and snacks!',
-        'ABSOLUTE ZERO RISK!–When it comes to keeping you hydrated and safe, we don’t like to play around. That’s why our Neon Grizzly survival hydration backpack comes with a LIFETIME money back guarantee! If, at any time, you’re not 100% satisfied, we’ll offer you a prompt and full refund!'
+        {
+        header: 'NOW YOU CAN STAY HYDRATED ALL THE TIME!',
+        body: 'Do you like outdoor adventures but hate carrying bulky water bottles or tumblers? Now you don’t have to! The ultimate Neon Grizzly hydration backpack by Absolute Zero is here to keep you hydrated no matter where you are effortlessly!',
+        },
+      {
+        header: 'A MUST-HAVE FOR RUNNERS, HIKERS & ALL ADVENTURERS!',
+        body: 'When embarking on a new adventure into the wilderness, you should alwaysmake sure that you’re prepared. That’s why our mighty hydration bladder back bag with its huge 2L capacity is your #1 must-have accessory!',
+      },
+      {
+        header: 'SO COMFORTABLE, YOU’LL FORGET YOU’RE WEARING IT!',
+        body: 'The lightweight design and super-comfy mesh shoulder straps, will offer youthe flexibility needed to run or climb without any hassle. Plus,the breathable mesh back will prevent sweating and help you enjoy your activities frustration-free!',
+      },
+      {
+        header: 'CAN YOU REALLY RISK DEHYDRATION?',
+        body: 'The answer is simple: NO! As a result,you should alwaysstay hydrated and make sure to replenish your bodily fluids. That’s why the Neon Grizzly robust hydration camel backpack with extra pockets is the ideal way to carry your water and snacks!',
+      },
+      {
+        header: 'ABSOLUTE ZERO RISK!',
+        body: 'When it comes to keeping you hydrated and safe, we don’t like to play around. That’s why our Neon Grizzly survival hydration backpack comes with a LIFETIME money back guarantee! If, at any time, you’re not 100% satisfied, we’ll offer you a prompt and full refund!'
+      }
       ],
     }
 
@@ -31,14 +46,29 @@ module.exports = app => {
         'https://images-na.ssl-images-amazon.com/images/I/911-Hj5LG-L._SY450_.jpg',
         'https://images-na.ssl-images-amazon.com/images/I/A1dwr36-6PL._SX425_.jpg'
       ],
-      price: 150,
+      price: 19.99,
       summary: 'HEEEEEERE I"M ALLOOOOOOWED EVERYTHING ALLLL OF THE TIIIIME',
       details: [
-        'YOUR NEW FAVORITE ACCESSORY IS FINALLY HERE! Plan your meals and store them, keep your lunch and dinner fresh and tasty, AND carry them wherever you want with this incredible, insulated soft cooler lunch bag that will make your life so much easier!',
-        'ENJOY YOUR MEALS FRESH LIKE YOU JUST COOKED THEM! The“BearHyde”exterior made of 840D polyester makes our bag perfectly tough, tear and water resistant, and makes sure the inner liner keeps your snacks, beverages and meals yummy!',
-        'ONE BAG, NUMEROUS FEATURES! Sidepockets that can hold 32 oz bottles, mesh pockets where you can store utensils and perishables, inner compartments that can perfectly fit your meal containers, and adjustable shoulder straps and carry straps that make carrying this bag a piece of cake; talk about many birds with one stone!',
-        'YOUR VERSATILE TRAVELING COMPANION! Thanks to this incredible soft cooling lunch bag you can thoroughly enjoy all kinds of adventures; hiking, camping, fishing, trekking, going to the beach, or simply organizing your pool and grill party!',
-        'WE GUARANTEE YOUR SATISFACTION! We want you to be happy, no matter what. That is why our products are backed by a 100% satisfaction guarantee; in the unlikely case that you don’t love your cooler bag, we will refund your money or send you a replacement!'
+        {
+          header: 'YOUR NEW FAVORITE ACCESSORY IS FINALLY HERE!',
+          body: 'Plan your meals and store them, keep your lunch and dinner fresh and tasty, AND carry them wherever you want with this incredible, insulated soft cooler lunch bag that will make your life so much easier!',
+        },
+        {
+          header: 'ENJOY YOUR MEALS FRESH LIKE YOU JUST COOKED THEM!',
+          body: 'The“BearHyde”exterior made of 840D polyester makes our bag perfectly tough, tear and water resistant, and makes sure the inner liner keeps your snacks, beverages and meals yummy!',
+        },
+        {
+          header: 'ONE BAG, NUMEROUS FEATURES!',
+          body: 'Sidepockets that can hold 32 oz bottles, mesh pockets where you can store utensils and perishables, inner compartments that can perfectly fit your meal containers, and adjustable shoulder straps and carry straps that make carrying this bag a piece of cake; talk about many birds with one stone!',
+        },
+        {
+          header: 'YOUR VERSATILE TRAVELING COMPANION!',
+          body: 'Thanks to this incredible soft cooling lunch bag you can thoroughly enjoy all kinds of adventures; hiking, camping, fishing, trekking, going to the beach, or simply organizing your pool and grill party!',
+        },
+        {
+          header: 'WE GUARANTEE YOUR SATISFACTION!',
+          body: 'We want you to be happy, no matter what. That is why our products are backed by a 100% satisfaction guarantee; in the unlikely case that you don’t love your cooler bag, we will refund your money or send you a replacement!',
+        }
       ],
     }
   })
