@@ -91,7 +91,7 @@ body {
 }
 
 .main__product-img {
-  height: 600px;
+  height: 400px;
   width: 400px;
   margin: 0 25px 0;
   transition: border .5s;
