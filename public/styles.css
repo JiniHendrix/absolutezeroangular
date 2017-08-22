@@ -82,7 +82,7 @@ body {
   margin-top: 50px;
   margin-bottom: 100px;
   width: 80%;
-  overflow: hidden;
+  height: 400px;
 }
 
 .main__footer {
@@ -94,11 +94,11 @@ body {
   height: 400px;
   width: 400px;
   margin: 0 25px 0;
-  transition: border .5s;
 }
 
 .main__product-img:hover {
-  border: 2px solid #1e90ff;
+  /* border: 2px solid #1e90ff; */
+  box-shadow: 0 0 3px 4px rgba(30,144,255,.5);
 }
 
 #MAIN__PRODUCT-IMG-LEFT {

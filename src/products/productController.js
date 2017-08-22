@@ -3,6 +3,7 @@ module.exports = app => {
     //probably going to load stuff from database, but that's later later
     //probably going to make it more static than i think, because I want to match the images with the details
     $scope.neonGrizzly = {
+      name: '',
       imageUrls: [
         'https://images-na.ssl-images-amazon.com/images/I/71B3WOr5nLL._SX425_.jpg',
         'https://images-na.ssl-images-amazon.com/images/I/71lAj9DS5BL._SX425_.jpg',
@@ -46,6 +47,7 @@ module.exports = app => {
         e.target.classList.add('product__thumbs--hover');
       }
     $scope.coldPolar = {
+      name: '',
       imageUrls: [
         'https://images-na.ssl-images-amazon.com/images/I/A1ssKkonMOL._SX425_.jpg',
         'https://images-na.ssl-images-amazon.com/images/I/91iSMgJXFLL._SX425_.jpg',
