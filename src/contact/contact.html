@@ -1,10 +1,10 @@
 <div class="route__container contact" ng-controller="ContactController">
   <h1 class="contact-header">Contact Us</h1>
-  <form ng-submit="email($event)">
-    <input class="email-detail" type="text" placeholder="Name">
-    <input class="email-detail" type="text" placeholder="Email">
-    <input class="email-detail" type="text" placeholder="Subject">
-    <textarea class="email-body" placeholder="Dear Absolute Zero..."></textarea>
+  <form ng-submit="email()">
+    <input class="email-detail" type="text" placeholder="Name" id="name" required>
+    <input class="email-detail" type="email" placeholder="Email" id="email" required>
+    <input class="email-detail" type="text" placeholder="Subject" id="subject" required>
+    <textarea class="email-body" placeholder="Dear Absolute Zero..." id="body" required></textarea>
     <input type="submit">
   </form>
 </div>

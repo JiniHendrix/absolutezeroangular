@@ -4,16 +4,22 @@ module.exports = app => {
     //and then clears the input fields
     //i could use this for my footer too since i dont have much to put in
     //footer could also have join mailing list and social media icons that dont work? lol
-    $scope.email = e => {
-      console.log(e.target.childNodes)
+    $scope.email = () => {
+      const requestBody = {};
+      requestBody.name = document.getElementById('name').value;
+      requestBody.email = document.getElementById('email').value;
+      requestBody.subject = document.getElementById('subject').value;
+      requestBody.body = document.getElementById('body').value;
 
-      const details = ['name', 'email', 'subject', 'body'];
-      const parsed = {};
-      details.forEach(detail => {
-        parsed[detail] = e.target.getElementById(detail).value
+      $http.post('/email', JSON.stringify(requestBody), {
+        'Content-Type': 'application/json'
       })
-
-      console.log(parsed);
-    }
+        .then(res => {
+          console.log(res);
+        })
+        .catch(err => {
+          console.log(err);
+        })
+    }    
   })
 }
