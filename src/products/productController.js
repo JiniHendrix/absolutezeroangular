@@ -39,7 +39,7 @@ module.exports = app => {
     }
 
       $scope.thumbOnClick = function(e) {
-        const mainImg = document.getElementsByClassName('product__img')[0];
+        const mainImg = document.getElementsByClassName('product__displayed-img')[0];
         mainImg.src = e.target.src;
 
         const hovered = document.getElementsByClassName('product__thumbs--hover')[0];
