@@ -297,8 +297,10 @@ body {
 }
 
 .product__buy-btn {
-  background-color: #1E90FF;
-  color: white;
+  background: #f4d078;
+  background: -webkit-linear-gradient(top,#f7dfa5,#f0c14b);
+  background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+  color: black;
   padding: 15px;
   border-radius: 5px;
   border: 1px solid black;
