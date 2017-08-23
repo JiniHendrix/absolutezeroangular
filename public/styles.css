@@ -282,6 +282,7 @@ body {
 .product__thumbs--hover {
   border: 1px solid #1E90FF;
   box-shadow: 0 0 3px 2px rgba(30,144,255,.5);
+  cursor: pointer;
 }
 
 .product__img--odd {
@@ -309,4 +310,5 @@ body {
 
 .product__buy-btn:hover {
   box-shadow: 0 0 3px 2px rgba(30,144,255,.5);
+  cursor: pointer;
 }
