@@ -4,7 +4,8 @@
     "angular-route": "^1.6.5",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    "nodemailer": "^4.0.1"
+    "nodemailer": "^4.0.1",
+    "validator": "^8.1.0"
   },
   "devDependencies": {
     "browserify": "^14.4.0",

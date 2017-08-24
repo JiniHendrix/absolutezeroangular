@@ -1,25 +1,37 @@
 module.exports = app => {
   app.controller('ContactController', ($scope, $http) => {
-    //function that makes a post request using form values
-    //and then clears the input fields
-    //i could use this for my footer too since i dont have much to put in
-    //footer could also have join mailing list and social media icons that dont work? lol
-    $scope.email = () => {
+    $scope.isEmailing = false;
+
+    $scope.email = (e) => {
+      $scope.isEmailing = true;
+
       const requestBody = {};
-      requestBody.name = document.getElementById('name').value;
-      requestBody.email = document.getElementById('email').value;
-      requestBody.subject = document.getElementById('subject').value;
-      requestBody.body = document.getElementById('body').value;
+      const id = e.target.id;
+      requestBody.name = document.getElementById(`${id}-name`).value;
+      requestBody.email = document.getElementById(`${id}-email`).value;
+      requestBody.subject = document.getElementById(`${id}-subject`).value;
+      requestBody.body = document.getElementById(`${id}-body`).value;
 
       $http.post('/email', JSON.stringify(requestBody), {
         'Content-Type': 'application/json'
       })
         .then(res => {
-          console.log(res);
+          console.log('Success!');
+          document.getElementById(`${id}-name`).value = '';
+          document.getElementById(`${id}-email`).value = '';
+          document.getElementById(`${id}-subject`).value = '';
+          document.getElementById(`${id}-body`).value = '';
+          $scope.isEmailing = false;
         })
         .catch(err => {
-          console.log(err);
+          console.log('Error!');
+          $scope.isEmailing = false;
         })
-    }    
+    }
+
+    $scope.successOnClick = () => {
+      $scope.isEmailing = true;
+      console.log($scope.isEmailing)
+    }
   })
 }

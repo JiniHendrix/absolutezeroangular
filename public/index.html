@@ -18,7 +18,7 @@
       <ul class="navbar__ul">
         <li class="navbar__li"><a href="#!">Home</a></li>
         <li class="navbar__li navbar__li--shop" ng-mouseleave="shopOnMouseLeave()" ng-mouseover="shopOnMouseOver()">
-          <a href="#">Shop</a>
+          <a href="">Shop</a>
           <div class="dropdown__wrapper">
             <div class="shop__dropdown">
               <ul class="shop__dropdown--ul" ng-repeat="(category, products) in products">
@@ -34,17 +34,21 @@
             </div>
           </div>
         </li>
-        <img src="#" class="main-logo"></img>
+        <img src="http://i.imgur.com/x4kMDcm.jpg" alt="logo" class="main-logo"></img>
         <li class="navbar__li"><a href="#!about">About</a></li>
         <li class="navbar__li"><a href="#!contact">Contact</a></li>
       </ul>
     </nav>
   </div>
   <ng-view></ng-view>
-  <footer class="footer">
-    <div class="footer__block">
-
-    </div><div class="footer__block" ng-controller="ContactController">
+  <footer class="footer" ng-controller="ContactController">
+    <div class="footer__block social-media-container">
+      <div class="social-media">
+        <a href="https://www.facebook.com/Absolute-Zero-Polar-Cooler-Bag-for-Work-Golf-Picnics-Travel-and-More-258801584535251/"><img src="http://i.imgur.com/bVqv5Kk.png" alt="fb-icon"></a>
+        <a href="https://twitter.com/absolutezerobag"><img src="http://i.imgur.com/sJWiCHV.png" alt="twitter-icon"></a>
+        <a href="https://www.instagram.com/absolutezerobags/"><img src="http://i.imgur.com/o7yTVyL.png" alt="insta-icon"></a>
+      </div>
+    </div><div class="footer__block">
       <form class="footer__form" ng-submit="email($event)" id="footer">
         <textarea placeholder="Message" id="footer-body" required></textarea>
         <input type="text" placeholder="Name" id="footer-name" required>
@@ -55,9 +59,16 @@
     </div><div class="footer__block mailing-list">
       <span>Join our Mailing List!</span>
       <form>
-        <input type="text" placeholder="Email" required>
+        <input type="email" placeholder="Email" required>
         <input type="submit">
       </form>
+    </div>
+    <!-- <div class="grey-screen">
+      <div class="success">
+        <h1>Success!</h1>
+      </div>
+    </div> -->
+    <div class="progress-bar" ng-show="isEmailing">
     </div>
   </footer>
 
