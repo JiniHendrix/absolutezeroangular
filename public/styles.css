@@ -110,7 +110,7 @@ body {
 }
 
 .route__container {
-  width: 80%;
+  width: 75%;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -345,6 +345,9 @@ textarea {
   width: 33%;
   height: 160px;
   box-sizing: border-box;
+  /* border: 1px solid white; */
+  vertical-align: top;
+  padding-top: 30px;
 }
 #footer *{
   background-color: black;
@@ -368,4 +371,20 @@ textarea {
   width: 50%;
   height: 100px;
   float: right;
+}
+
+.mailing-list {
+  color: white;
+  padding-left: 30px;
+}
+
+.mailing-list input {
+  background-color: black;
+  margin-top: 10px;
+  margin-left: 0;
+  color: white;
+}
+
+.mailing-list input::-webkit-input-placeholder {
+  color: white;
 }
