@@ -41,8 +41,23 @@
     </nav>
   </div>
   <ng-view></ng-view>
-  <footer class="main__footer">
-
+  <footer class="footer">
+    <div class=footer__block""></div>
+    <div class="footer__block" ng-controller="ContactController">
+      <form class="footer__form" ng-submit="email($event)" id="footer">
+        <textarea placeholder="Message" id="footer-body" required></textarea>
+        <input type="text" placeholder="Name" id="footer-name" required>
+        <input type="email" placeholder="Email" id="footer-email" required>
+        <input type="text" placeholder="Subject" id="footer-subject" required>
+        <input type="submit" placeholder="Email">
+      </form>
+    </div>
+    <div class="footer__block">
+      <span>Join our Mailing List!</span>
+      <form>
+        <input type="text">
+      </form>
+    </div>
   </footer>
 
 </body>

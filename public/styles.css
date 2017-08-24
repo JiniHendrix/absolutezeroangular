@@ -85,7 +85,7 @@ body {
   height: 400px;
 }
 
-.main__footer {
+.footer {
   height: 160px;
   background-color: black;
 }
@@ -325,7 +325,11 @@ body {
 .email-body {
   width: 400px;
   height: 300px;
+}
+
+textarea {
   font: inherit;
+  resize: none;
 }
 
 .contact input[type="submit"] {
@@ -334,4 +338,34 @@ body {
   color: white;
   font: inherit;
   border-radius: 5px;
+}
+
+.footer__block {
+  display: inline-block;
+  width: 33%;
+  height: 160px;
+  box-sizing: border-box;
+}
+#footer *{
+  background-color: black;
+  color: white;
+}
+
+#footer *::-webkit-input-placeholder {
+  color: white;
+}
+
+#footer input[type='submit'] {
+  margin-top: 15px;
+}
+
+.footer__block input {
+  margin-left: 3%;
+  width: 40%;
+}
+.footer__block textarea {
+  margin-right: 3%;
+  width: 50%;
+  height: 100px;
+  float: right;
 }
