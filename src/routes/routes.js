@@ -10,10 +10,10 @@ module.exports = app => {
     .when('/contact', {
       templateUrl: "../src/contact/contact.html"
     })
-    .when('/shop/neon-grizzly', {
+    .when('/shop/hydration_packs/neon-grizzly', {
       templateUrl: "../src/products/neon-grizzly.html"
     })
-    .when('/shop/cold-polar', {
+    .when('/shop/cooler_bags/cold-polar', {
       templateUrl: "../src/products/cold-polar.html"
     })
 })

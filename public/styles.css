@@ -119,6 +119,7 @@ body {
 .about__header {
   text-align: left;
   color: #1e90ff;
+  width: 100%;
 }
 
 .about__paragraph {
