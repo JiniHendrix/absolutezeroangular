@@ -3,9 +3,13 @@
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 160px;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   background-color: white;
+  min-height: 100vh;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .lato__reg {
@@ -29,8 +33,6 @@ body {
   width: 80%;
   margin: auto;
   margin-top: -150px;
-  /* border-top: 1px solid black;
-  border-bottom: 1px solid black; */
   height: 80px;
   text-align: center;
   position: relative;
@@ -85,9 +87,16 @@ body {
   height: 400px;
 }
 
+.view {
+  background-color: red;
+}
+
 .footer {
   height: 160px;
+  width: 100%;
   background-color: black;
+  position: absolute;
+  bottom: 0px;
 }
 
 .main__product-img {

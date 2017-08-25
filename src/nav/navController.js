@@ -14,13 +14,13 @@ module.exports = app => {
       "Hydration Packs": [
         {
           name: 'Neon Grizzly',
-          href: '#!shop/neon-grizzly'
+          href: '#!shop/hydration_packs/neon-grizzly'
         },
       ],
       "Cooler Bags": [
         {
           name: 'Cold Polar',
-          href: '#!shop/cold-polar'
+          href: '#!shop/cooler_bags/cold-polar'
         },
       ],
     }

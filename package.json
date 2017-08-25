@@ -19,7 +19,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env PORT=3000 nodemon server/server.js",
+    "start": "node server/server.js",
+    "dev-server": "cross-env PORT=3000 nodemon server/server.js",
     "watch": "watchify ./src/index.js -o ./build/build.js -v"
   },
   "repository": {
