@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const emailController = require('./controllers/emailController');
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(express.static(path.resolve(__dirname, '../public')));

@@ -21,7 +21,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
     "dev-server": "cross-env PORT=3000 nodemon server/server.js",
-    "watch": "watchify ./src/index.js -o ./build/build.js -v"
+    "watch": "watchify ./src/index.js -o ./build/build.js -v",
+    "build": "browserify ./src/index.js -o ./build/build.js"
   },
   "repository": {
     "type": "git",

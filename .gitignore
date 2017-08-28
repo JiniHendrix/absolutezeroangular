@@ -4,3 +4,7 @@ build
 yarn-error.log
 .elasticbeanstalk/
 get-pip.py
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
