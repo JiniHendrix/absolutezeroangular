@@ -18,7 +18,7 @@
     <nav class="navbar" ng-controller="NavController">
       <ul class="navbar__ul">
         <li class="navbar__li"><a href="#!">Home</a></li>
-        <li class="navbar__li navbar__li--shop" ng-mouseleave="shopOnMouseLeave()" ng-mouseover="shopOnMouseOver()">
+        <li class="navbar__li navbar__li--shop" ng-mouseleave="handleShopMouseLeave()" ng-mouseover="handleShopMouseOver()">
           <a>Shop</a>
           <div class="dropdown__wrapper">
             <div class="shop__dropdown">
@@ -51,7 +51,7 @@
     <nav class="small-nav">
       <ul>
         <li><a href="#!" class="menu-hover">Home</a></li>
-        <li ng-mouseleave="shopOnMouseLeave()" ng-mouseover="shopOnMouseOver()">
+        <li ng-click="handleShopMouseClick()">
           <a class="menu-hover">Shop</a>
           <div class="dropdown__wrapper">
             <div class="shop__dropdown">

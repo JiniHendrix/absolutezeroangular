@@ -92,16 +92,25 @@ module.exports = app => {
       ],
     }
 
-    $scope.shopOnMouseOver = () => {
+    $scope.handleShopMouseOver = () => {
       const dropDown = document.getElementsByClassName('dropdown__wrapper')[0];
-      dropDown.classList.add('turn-on');
       dropDown.classList.add('add-height');
     }
 
-    $scope.shopOnMouseLeave = () => {
+    $scope.handleShopMouseLeave = () => {
       const dropDown = document.getElementsByClassName('dropdown__wrapper')[0];
-      dropDown.classList.remove('turn-on');
       dropDown.classList.remove('add-height');
+    }
+
+    $scope.handleShopMouseClick = () => {
+      const dropDown = document.getElementsByClassName('dropdown__wrapper')[0];
+      dropDown.classList.toggle('add-height');
+    }
+
+    $scope.handleHamburgerClick = () => {
+      const hiddenMenu = document.getElementsByClassName('small-nav')[0];
+      console.log(hiddenMenu)
+      hiddenMenu.classList.toggle('show-small-nav');
     }
   })
 }
