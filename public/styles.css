@@ -69,12 +69,17 @@ body {
   height: 100%;
 }
 
-.navbar__li a:link, a:visited {
+a:link, a:visited {
   text-decoration: none;
   color: inherit;
 }
 
 .navbar__li a:hover {
+  background-color: #1e90ff;
+  color: #fffff0;
+}
+
+.menu-hover:hover {
   background-color: #1e90ff;
   color: #fffff0;
 }
@@ -453,3 +458,74 @@ textarea {
   animation-duration: 4s;
 }
 
+@media (max-width: 920px) {
+  .small-nav-wrapper {
+    display: block;
+    text-align: center;
+    margin-top: -130px;
+  }
+
+  .small-nav {
+    position: relative;
+    transition: height .2s cubic-bezier(1, .01, 1, 1);
+    -webkit-transition: height .2s cubic-bezier(1, .01, 1, 1);
+    -o-transition: height .2s cubic-bezier(1, .01, 1, 1);
+    -moz-transition: height .2s cubic-bezier(1, .01, 1, 1);
+    overflow: hidden;
+  }
+
+  .show-small-nav {
+    height: 200px;
+  }
+
+  .small-nav-wrapper ul {
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    width: 100vw;
+  }
+
+  .hamburger {
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #1E90FF;
+    margin: auto;
+    margin-top: 70px;
+    z-index: 10;
+    position: relative;
+  }
+
+  .line {
+    height: 2px;
+    background-color: white;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  .small-nav-wrapper li {
+    height: 50px;
+  }
+
+  .small-nav-wrapper a {
+    text-align: center;
+    line-height: 50px;
+    transition: background-color .5s, color .5s;
+  }
+
+  .navbar__wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 920px) {
+  .small-nav-wrapper {
+    display: none;
+  }
+
+  .navbar__wrapper {
+    display: block;
+  }
+}

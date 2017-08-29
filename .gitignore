@@ -1,6 +1,6 @@
 node_modules
 bower_components
-build
+buildy/*
 yarn-error.log
 .elasticbeanstalk/
 get-pip.py

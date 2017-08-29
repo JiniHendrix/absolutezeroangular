@@ -41,18 +41,18 @@
       </ul>
     </nav>
   </div>
-  <div class="small-nav-wrapper">
+  <div class="small-nav-wrapper" ng-controller="NavController">
     <img src="http://i.imgur.com/x4kMDcm.jpg" alt="logo" class="main-logo">
-    <button class="hamburger">
+    <button ng-click="handleHamburgerClick()" class="hamburger">
       <div class="line"></div>
       <div class="line"></div>
       <div class="line"></div>
     </button>
     <nav class="small-nav">
       <ul>
-        <li><a href="#!">Home</a></li>
+        <li><a href="#!" class="menu-hover">Home</a></li>
         <li ng-mouseleave="shopOnMouseLeave()" ng-mouseover="shopOnMouseOver()">
-          <a>Shop</a>
+          <a class="menu-hover">Shop</a>
           <div class="dropdown__wrapper">
             <div class="shop__dropdown">
               <ul class="shop__dropdown--ul" ng-repeat="(category, products) in products">
@@ -68,8 +68,8 @@
             </div>
           </div>
         </li>
-        <li><a href="#!about">About</a></li>
-        <li><a href="#!contact">Contact</a></li>
+        <li><a href="#!about" class="menu-hover">About</a></li>
+        <li><a href="#!contact" class="menu-hover">Contact</a></li>
       </ul>
     </nav>
   </div>
