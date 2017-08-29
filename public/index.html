@@ -35,9 +35,36 @@
             </div>
           </div>
         </li>
-        <img src="http://i.imgur.com/x4kMDcm.jpg" alt="logo" class="main-logo"></img>
+        <img src="http://i.imgur.com/x4kMDcm.jpg" alt="logo" class="main-logo">
         <li class="navbar__li"><a href="#!about">About</a></li>
         <li class="navbar__li"><a href="#!contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="small-nav-wrapper">
+    <img src="http://i.imgur.com/x4kMDcm.jpg" alt="logo" class="main-logo">
+    <nav class="small-nav">
+      <ul>
+        <li><a href="#!">Home</a></li>
+        <li ng-mouseleave="shopOnMouseLeave()" ng-mouseover="shopOnMouseOver()">
+          <a>Shop</a>
+          <div class="dropdown__wrapper">
+            <div class="shop__dropdown">
+              <ul class="shop__dropdown--ul" ng-repeat="(category, products) in products">
+                <li class="shop__dropdown--category">
+                  {{category}}
+                </li>
+                <li class="shop__dropdown--product" ng-repeat="product in products">
+                  <a href={{product.href}}>
+                    {{product.name}}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="#!about">About</a></li>
+        <li><a href="#!contact">Contact</a></li>
       </ul>
     </nav>
   </div>
