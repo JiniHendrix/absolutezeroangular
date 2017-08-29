@@ -94,14 +94,20 @@ module.exports = app => {
 
     $scope.shopOnMouseOver = () => {
       const dropDown = document.getElementsByClassName('dropdown__wrapper')[0];
-      dropDown.classList.add('turn-on');
+      // dropDown.classList.add('turn-on');
       dropDown.classList.add('add-height');
     }
 
     $scope.shopOnMouseLeave = () => {
       const dropDown = document.getElementsByClassName('dropdown__wrapper')[0];
-      dropDown.classList.remove('turn-on');
+      // dropDown.classList.remove('turn-on');
       dropDown.classList.remove('add-height');
+    }
+
+    $scope.handleHamburgerClick = () => {
+      const hiddenMenu = document.getElementsByClassName('small-nav')[0];
+      console.log(hiddenMenu)
+      hiddenMenu.classList.toggle('.show-small-nav');
     }
   })
 }

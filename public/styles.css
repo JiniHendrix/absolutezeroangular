@@ -529,3 +529,9 @@ textarea {
     display: block;
   }
 }
+
+@media (max-width: 882px) {
+  .about {
+    text-align: center;
+  }
+}
