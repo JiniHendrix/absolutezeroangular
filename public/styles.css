@@ -558,3 +558,8 @@ textarea {
     position: static;
   }
 }
+@media (max-width: 882px) {
+  .about {
+    text-align: center;
+  }
+}
