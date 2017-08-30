@@ -15,9 +15,9 @@
     <div class="product__detail" ng-repeat="detail in neonGrizzly.details">
       <img class="product__detail-img" ng-class-odd="product__img--odd" src={{neonGrizzly.imageUrls[$index]}}>
       <p class="product__detail-text">
-        <span class="product__detail--bold">
+        <h3 class="product__detail--bold">
           {{detail.header}}
-        </span> <br>
+        </h3>
         {{detail.body}}
       </p>
     </div>
