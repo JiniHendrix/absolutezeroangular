@@ -94,16 +94,11 @@ module.exports = app => {
 
     $scope.handleShopMouseOver = () => {
       const dropDown = document.getElementsByClassName('dropdown__wrapper')[0];
-<<<<<<< HEAD
-=======
-      // dropDown.classList.add('turn-on');
->>>>>>> master
       dropDown.classList.add('add-height');
     }
 
     $scope.handleShopMouseLeave = () => {
       const dropDown = document.getElementsByClassName('dropdown__wrapper')[0];
-<<<<<<< HEAD
       dropDown.classList.remove('add-height');
     }
 
@@ -116,16 +111,6 @@ module.exports = app => {
       const hiddenMenu = document.getElementsByClassName('small-nav')[0];
       console.log(hiddenMenu)
       hiddenMenu.classList.toggle('show-small-nav');
-=======
-      // dropDown.classList.remove('turn-on');
-      dropDown.classList.remove('add-height');
-    }
-
-    $scope.handleHamburgerClick = () => {
-      const hiddenMenu = document.getElementsByClassName('small-nav')[0];
-      console.log(hiddenMenu)
-      hiddenMenu.classList.toggle('.show-small-nav');
->>>>>>> master
     }
   })
 }
