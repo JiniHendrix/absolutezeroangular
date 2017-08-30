@@ -1,5 +1,11 @@
 
   <div class="main__product-img-wrapper" ng-controller="ProductController">
-    <a href="#!shop/hydration_packs/neon-grizzly"><img id="MAIN__PRODUCT-IMG-LEFT" class="main__product-img" src={{neonGrizzly.imageUrls[0]}}></a>
-    <a href="#!shop/cooler_bags/cold-polar"><img id="MAIN__PRODUCT-IMG-RIGHT" class="main__product-img" src={{coldPolar.imageUrls[0]}}></a>
+    <a href="#!shop/hydration_packs/neon-grizzly">
+      <img class="main__product-img" src={{neonGrizzly.imageUrls[0]}}>
+      <h1 class="product__name" id="neon-name">{{neonGrizzly.name}}</h1>
+    </a>
+    <a href="#!shop/cooler_bags/cold-polar">
+      <img class="main__product-img" src={{coldPolar.imageUrls[0]}}>
+      <h1 class="product__name" id="cold-name">{{coldPolar.name}}</h1>
+    </a>
   </div>

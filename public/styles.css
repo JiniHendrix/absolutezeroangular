@@ -473,6 +473,10 @@ textarea {
     margin-top: -130px;
   }
 
+  .main__product-img-wrapper a:first-child {
+    margin-bottom: 40px;
+  }
+
   .small-nav {
     position: relative;
     transition: height .2s cubic-bezier(1, .01, 1, 1);
