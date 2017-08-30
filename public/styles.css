@@ -200,6 +200,7 @@ a:link, a:visited {
 }
 
 .product__detail--bold {
+  font-weight: 700;
   color: #1e90ff;
 }
 
@@ -622,6 +623,10 @@ textarea {
   .product__detail-img {
     float: none;
     display: inline-block;
+  }
+
+  .product__detail {
+    text-align: center;
   }
 }
 
